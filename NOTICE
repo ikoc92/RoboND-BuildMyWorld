@@ -1,0 +1,75 @@
+NOTICE
+
+This repository includes code and resources that are subject to various licenses. Please review the following:
+
+1. Apache License 2.0:
+   Portions of this software are derived from code licensed under the Apache License 2.0. The original code is available at .
+
+   - File(s) containing Apache-licensed code with the original source:
+     - script/welcome_message.cpp: https://github.com/gazebosim/gazebo-classic/blob/gazebo6/examples/plugins/hello_world/hello_world.cc
+     - CMakeLists.txt: https://github.com/gazebosim/gazebo-classic/blob/gazebo6/examples/plugins/hello_world/CMakeLists.txt
+
+   - Changes made to the original work:
+     - script/welcome_message.cpp:
+       - {
+           printf("Hello World!\n");
+         }
+       + {
+           printf("Welcome to myworld'!\n");
+           printf("Models (except for \"fw_robot\" and \"basic_office\") \n");
+           printf("were inserted from http://models.gazebosim.org/\n");
+         }
+     - CMakeLists.txt:
+       - add_library(hello_world SHARED hello_world.cc)
+         target_link_libraries(hello_world ${GAZEBO_LIBRARIES})
+       + add_library(welcome_message SHARED script/welcome_message.cpp)
+         target_link_libraries(welcome_message ${GAZEBO_LIBRARIES})
+
+   Apache License, Version 2.0
+   http://www.apache.org/licenses/LICENSE-2.0
+
+   For the full text of the Apache License 2.0, please see the LICENSE.Apache-2.0 file in this repository.
+
+2. Creative Commons Attribution 3.0 Unported:
+   Some files in this repository are obtained from a source licensed under the Creative Commons Attribution 3.0 Unported license.
+
+   - File(s) under Creative Commons Attribution 3.0 Unported license with the original source:
+     - models/bookshelf: http://models.gazebosim.org/bookshelf/
+     - models/cabinet: http://models.gazebosim.org/cabinet/
+     - models/cafe_table: http://models.gazebosim.org/cafe_table/
+     - models/cardboard_box: http://models.gazebosim.org/cardboard_box/
+     - models/double_pendulum_with_base: http://models.gazebosim.org/double_pendulum_with_base/
+     - models/grey_tote: http://models.gazebosim.org/grey_tote/
+     - models/parrot_bebop_2: http://models.gazebosim.org/parrot_bebop_2/
+     - models/table: http://models.gazebosim.org/table/
+     - models/trisphere_cycle: http://models.gazebosim.org/trisphere_cycle/
+     - models/warehouse_robot: http://models.gazebosim.org/warehouse_robot/
+     - models/youbot: http://models.gazebosim.org/youbot/
+
+   Creative Commons Attribution 3.0 Unported
+   https://creativecommons.org/licenses/by/3.0/
+
+   For the full text of the Creative Commons Attribution 3.0 Unported license, please see the LICENSE.CC-BY-3.0 file in this repository.
+
+3. My Own Office Model:
+   Certain files in this repository are authored by Ismail Koc and are dedicated to the public domain under the Creative Commons Zero v1.0 Universal (CC0 1.0) Public Domain Dedication.
+
+   - File(s) authored by Ismail Koc:
+     - models/basic_office
+     - models/fw_robot
+     - models/twRobot
+
+   Creative Commons Zero v1.0 Universal (CC0 1.0) Public Domain Dedication
+   https://creativecommons.org/publicdomain/zero/1.0/
+
+   For the full text of the Creative Commons Zero v1.0 Universal (CC0 1.0) Public Domain Dedication, please see the LICENSE.CC0-1.0 file in this repository.
+
+4. The World File:
+   The file "world/myworld.world" is derived from Ismail Koc's work and other mentioned sources, and is subject to the following license:
+
+   Creative Commons Attribution 3.0 Unported
+   https://creativecommons.org/licenses/by/3.0/
+
+   For the full text of the Creative Commons Attribution 3.0 Unported license, please see the LICENSE.CC-BY-3.0 file in this repository.
+
+Please refer to the respective licenses and original sources for detailed terms and conditions.
