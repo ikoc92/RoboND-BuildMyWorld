@@ -1,0 +1,11 @@
+This repository contains materials under multiple licenses.
+
+- Original models/assets authored by Ismail Koc are licensed under CC0-1.0.
+- Certain source files derived from Gazebo example code are licensed under Apache-2.0.
+- Certain third-party models and derivative works based on Gazebo models are licensed under CC-BY-3.0.
+
+See NOTICE for file-level attribution and details.
+Full license texts are included in:
+- LICENSE.Apache-2.0
+- LICENSE.CC-BY-3.0
+- LICENSE.CC0-1.0
